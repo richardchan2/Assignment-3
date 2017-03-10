@@ -5,10 +5,25 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
+    <div id="contentWrapper">
+		<div id="chatBoxWrapper">
+			<center><h1 id="identity" style="color:#f5f5f5"></h1></center>
+			<div id="chatBox">
+				<ul id="messages"></ul>
+			</div>
+		</div>
+		<div id="usersBoxWrapper">
+		<center><h1 style="color:#f5f5f5">Online Users</h1></center>
+			<div id="usersBox">
+				<ul id="users"></ul>
+			</div>
+		</div>
+	</div>
+		<div id="textBox">
+			<form action="">
+			  <input id="m" autocomplete="off" /><button>Send</button>
+			</form>
+		</div>
     <script
        src="https://code.jquery.com/jquery-3.1.1.min.js"
        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="

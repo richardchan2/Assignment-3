@@ -1,8 +1,93 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font: 13px Helvetica, Arial; }
-form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
-form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
-#messages { list-style-type: none; margin: 0; padding: 0; }
-#messages li { padding: 5px 10px; }
-#messages li:nth-child(odd) { background: #eee; }
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
+
+body { 
+	font: 13px Helvetica, Arial; 
+	background: #d5d5d5;
+}
+
+form { 
+	background: #000; 
+	padding: 3px; 
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
+}
+
+form input { 
+	border: 0; 
+	padding: 10px; 
+	width: 90%; 
+	margin-right: .5%; 
+}
+
+form button { 
+	width: 9%; 
+	background: rgb(130, 224, 255); 
+	border: none; 
+	padding: 10px; 
+}
+#messages {
+	list-style-type: none; 
+	padding: 0px; 
+	font-weight: bold;
+	color: #F5F5F5;
+	width: 90vh;
+}
+#messages li { 
+	padding: 5px 10px;
+	color: #F5F5F5;
+}
+
+#contentWrapper {
+	margin: auto;
+}
+
+#users {
+	float: left;
+	margin: 10px;
+	color: #F5F5F5;
+}
+
+#chatBoxWrapper {
+	float: left;
+ 	height: 90vh;
+	width: 95vh;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border: 1px #000000 solid;
+	background: #595959;
+	position: absolute;
+}
+
+#chatBoxWrapper #chatBox {
+	position: absolute;
+	bottom: 0;
+	overflow-y:auto;
+	max-height: 90%
+}
+
+#usersBoxWrapper {
+	float: right;
+	/*height: 700px;
+	width: 300px;*/
+	height: 90vh;
+	width: 80vh;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+	border: 1px #000000 solid;
+	background: #595959;
+	position: relative;
+}
+
+#usersBoxWrapper #usersBox {
+	position: absolute;
+	bottom: 0;
+}
